@@ -1,4 +1,4 @@
-// 📁 src/components/charts/PieChart.jsx
+
 
 import { Pie } from 'react-chartjs-2';
 import {

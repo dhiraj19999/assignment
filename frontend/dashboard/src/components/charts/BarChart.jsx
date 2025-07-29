@@ -10,9 +10,9 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 export default function BarChart({ data }) {
   function getUnique(key) {
-  const values = data.map(d => d[key]);         // 1. sabhi values nikalo (e.g., sector)
-  const nonEmpty = values.filter(val => val);   // 2. null/undefined/empty hatao
-  const unique = [...new Set(nonEmpty)];        // 3. unique values banao using Set
+  const values = data.map(d => d[key]);         
+  const nonEmpty = values.filter(val => val);   // 2. null/undefined/empty removed
+  const unique = [...new Set(nonEmpty)];        // 3. create  unique values  using Set
   return unique;
 }
 
